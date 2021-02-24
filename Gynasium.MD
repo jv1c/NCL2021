@@ -124,17 +124,21 @@ Where was the picture taken? Please use only positive numbers with 4 decimal pla
 
 # Lookup 
 
-| Q1 - What type of DNS record holds the DNSSEC public signing key? | DNSKEY |
-| ------------------------------------------------------------ | ------ |
-| Q2 - What type of DNS record is used to map hostnames to IPv6 addresses? | AAAA   |
-| Q3 - What type of DNS record is used to delegate a DNS zone? | NS     |
+|      | Questions                                                    | Answers |
+| ---- | ------------------------------------------------------------ | ------- |
+|      | Q1 - What type of DNS record holds the DNSSEC public signing key? | DNSKEY  |
+|      | Q2 - What type of DNS record is used to map hostnames to IPv6 addresses? | AAAA    |
+|      | Q3 - What type of DNS record is used to delegate a DNS zone? | NS      |
+
+
 
 
 
 # Threat Intel
 
-| Q1 What is the CVE of the original POODLE attack?            | CVE-2014-3566 |
+| Questions                                                    | Answers       |
 | ------------------------------------------------------------ | ------------- |
+| Q1 What is the CVE of the original POODLE attack?            | CVE-2014-3566 |
 | Q2 What version of VSFTPD contained the smiley face backdoor? |               |
 | Q3 - What was the first 1.0.1 version of OpenSSL that was NOT vulnerable to heartbleed? |               |
 | Q4 - What was the original RFC number that described Telnet? |               |
