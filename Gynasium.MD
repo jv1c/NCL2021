@@ -32,12 +32,12 @@ Photoshop Thumbnail             : (Binary data 9828 bytes, use -b option to extr
 IPTC Digest                     : ff17a6db579e22d18220c2a88dd5833d
 Exif Byte Order                 : Little-endian (Intel, II)
 Compression                     : JPEG (old-style)
-													Make                            : Apple
+											Make                            : Apple
 											Camera Model Name               : Apple iPhone 5
 Resolution Unit                 : inches
-													Exposure Time                   : 1/640
+											Exposure Time                   : 1/640
 Exif Version                    : 0230
-										Create Date                     : 2015:05:15 02:14:22
+										    Create Date                     : 2015:05:15 02:14:22
 Components Configuration        : Y, Cb, Cr, -
 Flashpix Version                : 0100
 GPS Latitude Ref                : North
@@ -102,7 +102,7 @@ Shutter Speed                   : 1/640
 Thumbnail Image                 : (Binary data 9828 bytes, use -b option to extract)
 GPS Latitude                    : 39 deg 52' 30.00" N
 GPS Longitude                   : 20 deg 0' 36.00" E
-						GPS Position                    : 39 deg 52' 30.00" N, 20 deg 0' 36.00" E
+					                                	GPS Position                    : 39 deg 52' 30.00" N, 20 deg 0' 36.00" E
 ```
 
 
