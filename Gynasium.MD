@@ -139,15 +139,190 @@ Where was the picture taken? Please use only positive numbers with 4 decimal pla
 | Questions                                                    | Answers       |
 | ------------------------------------------------------------ | ------------- |
 | Q1 What is the CVE of the original POODLE attack?            | CVE-2014-3566 |
-| Q2 What version of VSFTPD contained the smiley face backdoor? |               |
-| Q3 - What was the first 1.0.1 version of OpenSSL that was NOT vulnerable to heartbleed? |               |
-| Q4 - What was the original RFC number that described Telnet? |               |
-| Q5 - How large (in bytes) was the SQL Slammer worm?          |               |
-| Q6 - Samy is my...                                           |               |
+| Q2 What version of VSFTPD contained the smiley face backdoor? | 2.3.4         |
+| Q3 - What was the first 1.0.1 version of OpenSSL that was NOT vulnerable to heartbleed? | 1.0.1g        |
+| Q4 - What was the original RFC number that described Telnet? | RFC 15        |
+| Q5 - How large (in bytes) was the SQL Slammer worm?          | 376           |
+| Q6 - Samy is my...                                           | hero          |
 
 Additional Notes
 
-Q1: 
-
 * Poodle Stands for 'Padding Oracle on Downgraded Legacy Encryption' - exploits SSL 3.0 proto and lets attacks eaves drop on communication encrypted using SSLv3
+* SQL Slammer is a 2003 computer worm that caused a denial of service on some internet hosts and dramatically slowed general Internet traffic (Wikipedia)
+* Samy harmless worm that carried a payload that would display the string 'but most of all, samy is my hero' on a Victim's Myspace profile page
+
+
+
+# HTTP
+
+| Questions                                                    | Answers    |
+| ------------------------------------------------------------ | ---------- |
+| What HTTP request header is used to denote what URI linked to the resource being requested? | referer    |
+| What HTTP request header is used to identify the client that made the HTTP request? | user-agent |
+| What HTTP request header is used to identify the acceptable content types that can be returned? | accept     |
+
+
+
+# SSL
+
+| Questions                                             | Answers |
+| ----------------------------------------------------- | ------- |
+| Who is the issuer for Cyber Skyline's SSL certificate | Sectigo |
+| How many bits long is the SSL key?                    | 2048    |
+| How many certificates are in the certificate chain?   | 3       |
+
+Steps:
+
+1. Click 'lock box icon to the left of the address bar' --> Certificate --> Issued by is under general
+2. Click the details tab
+3. 'Public key RSA (2048 Bits)' ---> SSL key's size
+4. Click the Certification Path to see how many certificates are in the current chain.
+
+
+
+# Barcode
+
+##Challenge provides user with a Barcode.gif file.
+
+Cyber Command: We intercepted a barcode we think might be hiding a flag. See if you can find it.
+
+Steps:
+
+1. sudo apt-get update -y
+2. sudo apt-get install -y zbar-tools
+3. zbarimg Barcode.gif
+
+zbarimg outputs:
+
+```
+root@kali:~/Documents# zbarimg Barcode.gif
+​```CODE-39:SKY-UZLU-5635```
+scanned 1 barcode symbols from 1 images in 0 seconds
+
+        . EAN/UPC (EAN-13, EAN-8, EAN-2, EAN-5, UPC-A, UPC-E, ISBN-10, ISBN-13)
+        . DataBar, DataBar Expanded
+        . Code 128
+        . Code 93
+        . Code 39
+        . Codabar
+        . Interleaved 2 of 5
+        . QR code
+        . SQ code
+  - is the barcode large enough in the image?
+  - is the barcode mostly in focus?
+  - is there sufficient contrast/illumination?
+  - If the symbol is split in several barcodes, are they combined in one image?
+  - Did you enable the barcode type?
+    some EAN/UPC codes are disabled by default. To enable all, use:
+    $ zbarimg -S*.enable <files>
+    Please also notice that some variants take precedence over others.
+    Due to that, if you want, for example, ISBN-10, you should do:
+    $ zbarimg -Sisbn10.enable <files>
+
+```
+
+Cyber command: What format does the barcode use?
+
+* Code 39
+
+What is the flag hidden in the barcode?
+
+* SKY-UZLU-5635
+
+#  Crypto 1  
+
+# What are number bases?
+
+Number bases are commonly used to represent data in different forms. A base is the number of different digits or combination of digits and letters that a system of counting uses to represent numbers. You are probably more familiar with base-10 (decimal), where there are 10 possible values for each digit (0-9). There are infinite number bases, but you will only encounter a small handful of them because there is no benefit to using any arbitrary number base (except maybe for hiding data? 🤔). In computer science, in addition to decimal, you may see these common number bases:
+
+- base-2 (binary)
+- base-8 (octal)
+- base-16 (hexadecimal)
+- base-64 (base64)
+
+# How are number bases used?
+
+Number bases are used for a variety of reasons. Binary is used because the memory in computers is made via a series of on and off switches which represent ones and zeros. We use octal and hexadecimal because they are more concise than binary and easier for humans to read. Base64 is used to more efficiently represent binary data in ASCII. In cybersecurity, you will find data being represented in a variety of number bases, so it is important to be able to understand how number bases work and how to understand them so you can inturpret the data.
+
+# How do you count in different number bases?
+
+Let's start simple with binary. Binary is base-2, meaning that there are 2 possible values for each digit, typically 0 (zero) and 1 (one). Incrementing numbers works the same way in every number base; when you have reached the max value of a single digit, you increment the next significant digit by one and reset the current digit to zero. This is how you would count in binary:
+
+| Decimal | Binary |
+| ------- | ------ |
+| 0       | 00000  |
+| 1       | 00001  |
+| 2       | 00010  |
+| 3       | 00011  |
+| 4       | 00100  |
+| 5       | 00101  |
+| 6       | 00110  |
+| 7       | 00111  |
+| 8       | 01000  |
+| 9       | 01001  |
+| 10      | 01010  |
+| 11      | 01011  |
+| 12      | 01100  |
+| 13      | 01101  |
+| 14      | 01110  |
+| 15      | 01111  |
+| 16      | 10000  |
+
+The same idea applies to all the other number bases. Let's move on to hexadecimal. With hexadecimal, there are 16 possible values for each digit. You might be wondering how you could squeeze 16 values into a single digit.
+
+In order to do this, we must expand past our normal decimal numbers and into the alphabet (in theory you could use any other characters/symbols - we're just familiar with numbers and letters but you could make up your own symboles or even use emojis if you wanted to). In hexadecimal, instead of each digit being 0-9, it's now 0-F where A represents a value of decimal 10 and F represents a value of decimal 15. Take a look at this table to see how it works.
+
+| Decimal | Hexadecimal |
+| ------- | ----------- |
+| 0       | 00          |
+| 1       | 01          |
+| 2       | 02          |
+| 3       | 03          |
+| 4       | 04          |
+| 5       | 05          |
+| 6       | 06          |
+| 7       | 07          |
+| 8       | 08          |
+| 9       | 09          |
+| 10      | 0A          |
+| 11      | 0B          |
+| 12      | 0C          |
+| 13      | 0D          |
+| 14      | 0E          |
+| 15      | 0F          |
+| 16      | 10          |
+| 17      | 11          |
+| 18      | 12          |
+| 19      | 13          |
+| 20      | 14          |
+
+# More info
+
+There is so much more to learn about number bases. Like converting between number bases or doing math in different number bases. Check out these resources to learn more:
+
+https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/number-systems-introduction
+
+https://www.purplemath.com/modules/numbbase.htm
+
+https://betterexplained.com/articles/numbers-and-bases/
+
+
+
+Cyber Command
+
+Our analysts have obtained password dumps storing hacker passwords. After obtaining a few plaintext passwords, it appears that they are all simply encoded using different number bases.
+
+11:43:37 pm
+
+| User                                                         | Encrypted Password                                           | Answer |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | :----: |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/nan.jpg)Nan15 points | 0x73636f7270696f6e                                           |        |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/kristy.png)Kristy15 points | c2NyaWJibGU=                                                 |        |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/stevie.jpg)Stevie15 points | 01110011 01100101 01100011 01110101 01110010 01100101 01101100 01111001 |        |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/cassie.png)Cassie35 points | 01100010 01000111 00111001 01110011 01100010 01000111 01101100 01110111 01100010 00110011 01000001 00111101 |        |
+
+1. Used unit converstion.info/texttools/hexadecimal to convert hex. Note: 0x indicates value is hexadecimal and should not be converted
+2. Base64
+3. Binary
+4. Double encoded -> bin > ASCII based64 ASCII
 
