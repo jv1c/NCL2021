@@ -4,4 +4,4 @@
 
 
 
-![this_is_fine](C:\Users\jv1c\Documents\PenReferences\WriteUps\NCL\this_is_fine.jpg)\
+![this_is_fine](https://www.dictionary.com/e/wp-content/uploads/2018/03/This-is-Fine-300x300.jpg)\
