@@ -4,4 +4,4 @@
 
 
 
-![image-20210224002345915](C:\Users\jv1c\AppData\Roaming\Typora\typora-user-images\image-20210224002345915.png)
+![this_is_fine](C:\Users\jv1c\Documents\PenReferences\WriteUps\NCL\this_is_fine.jpg)\
