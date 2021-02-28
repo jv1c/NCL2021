@@ -308,21 +308,52 @@ https://betterexplained.com/articles/numbers-and-bases/
 
 
 
-Cyber Command
+#  Crypto 1 
 
 Our analysts have obtained password dumps storing hacker passwords. After obtaining a few plaintext passwords, it appears that they are all simply encoded using different number bases.
 
 11:43:37 pm
 
-| User                                                         | Encrypted Password                                           | Answer |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | :----: |
-| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/nan.jpg)Nan15 points | 0x73636f7270696f6e                                           |        |
-| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/kristy.png)Kristy15 points | c2NyaWJibGU=                                                 |        |
-| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/stevie.jpg)Stevie15 points | 01110011 01100101 01100011 01110101 01110010 01100101 01101100 01111001 |        |
-| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/cassie.png)Cassie35 points | 01100010 01000111 00111001 01110011 01100010 01000111 01101100 01110111 01100010 00110011 01000001 00111101 |        |
+| User                                                         | Encrypted Password                                           |  Answer  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | :------: |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/nan.jpg)Nan15 points | 0x73636f7270696f6e                                           | scorpion |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/kristy.png)Kristy15 points | c2NyaWJibGU=                                                 | scribble |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/stevie.jpg)Stevie15 points | 01110011 01100101 01100011 01110101 01110010 01100101 01101100 01111001 | securely |
+| ![img](https://cdn.cyberskyline.com/3e9b3fbd7bdbf1502beb85f47b4da543e526762f/img/avatars/small/cassie.png)Cassie35 points | 01100010 01000111 00111001 01110011 01100010 01000111 01101100 01110111 01100010 00110011 01000001 00111101 | lollipop |
 
 1. Used unit converstion.info/texttools/hexadecimal to convert hex. Note: 0x indicates value is hexadecimal and should not be converted
 2. Base64
 3. Binary
 4. Double encoded -> bin > ASCII based64 ASCII
+
+Todo: Include screenshots and explanations
+
+# Crypto 2
+
+Cyber Command
+
+Our analysts have obtained password dumps storing hacker passwords. It seems to be using a pretty simply encryption scheme, see if you can crack them.
+
+10:47:44 pm
+
+| User                                                         | Encrypted Password |    Answer    |
+| ------------------------------------------------------------ | ------------------ | :----------: |
+| ![img](https://cdn.cyberskyline.com/7149c59db65c6cd9ce44e4a78714feea59e230ba/img/avatars/small/mark.png)Mark25 points | iveghny ynxr       | virtual lake |
+
+It's a ROT13
+
+# Crypto 3
+
+Cyber Command
+
+Our analysts have obtained password dumps storing hacker passwords. See if you can crack them.
+
+11:06:08 pm
+
+| User                                                         | Encrypted Password  |       Answer        |
+| ------------------------------------------------------------ | ------------------- | :-----------------: |
+| ![img](https://cdn.cyberskyline.com/7149c59db65c6cd9ce44e4a78714feea59e230ba/img/avatars/small/patrick.png)Patrick25 points | hzuvob lyerlfh xzev | safely obvious cave |
+
+* it's an atbash
+* todo: demonstrate
 
