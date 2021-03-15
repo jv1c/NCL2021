@@ -357,3 +357,59 @@ Our analysts have obtained password dumps storing hacker passwords. See if you c
 * it's an atbash
 * todo: demonstrate
 
+# Crypto 4
+
+Our analysts have obtained password dumps storing hacker passwords. See if you can crack them.
+
+11:11:13 pm
+
+| User                                                         | Encrypted Password                                           |                            Answer                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------: |
+| ![img](https://cdn.cyberskyline.com/471567894ca60c53de132737a04d2a8da6f4961e/img/avatars/small/molly.png)Molly25 points | - .... . / ... . -.-. .-. . - / --- ..-. / --. . - - .. -. --. / .- .... . .- -.. / .. ... / --. . - - .. -. --. / ... - .- .-. - . -.. / ... -.- -.-- / -.. -.- ...- -... / ----. ---.. .---- -.... | THE SECRET OF GETTING AHEAD IS GETTING STARTED SKY DKVB 9816 |
+
+* Def is Morse code beep boop beep boop
+* Used https://morsecode.world/international/translator.html
+
+# Crypto 5
+
+Cyber Command
+
+Our analysts have obtained encrypted message. See if you can crack them.
+
+7:23:20 pm
+
+| User                                                         | Encrypted Password                             |                     Answer                     |
+| ------------------------------------------------------------ | ---------------------------------------------- | :--------------------------------------------: |
+| ![img](https://cdn.cyberskyline.com/471567894ca60c53de132737a04d2a8da6f4961e/img/avatars/small/zoe.jpg)Zoe50 points | Cair eruSA-0org sgaeudrpesr K-II98.ue cn seYQ3 | courage is grace under pressure sky-aiqi-9380. |
+| ![img](https://cdn.cyberskyline.com/471567894ca60c53de132737a04d2a8da6f4961e/img/avatars/small/justen.jpg)Justen50 points | F daS-eefn  n KZ3eheadty.YI8lta oiwy-Q0. r aI2 | feel the fear and do it anyway. sky-iqiz-3802. |
+
+* https://crypto.interactive-maths.com/rail-fence-cipher.html
+* todo: write about rail
+
+# Crypto 6
+
+Our analysts have obtained an encrypted message. We know that the key, "qizkwcgqbs" was used. See if you can crack them.
+
+7:32:37 pm
+
+| User                                                         | Encrypted Password                                           |                            Answer                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | :----------------------------------------------------------: |
+| ![img](https://cdn.cyberskyline.com/471567894ca60c53de132737a04d2a8da6f4961e/img/avatars/small/matthew.png)Matthew50 points | Y ln xkv lubj swlzqvkht, A vmzb pjk bbua we ddgs ILQ-GQYU-8026 | I do not fear computers, I fear the lack of them SKY-QIZK-8026 |
+
+* https://www.boxentriq.com/code-breaking/vigenere-cipher
+
+# Stego 1
+
+Cyber Command
+
+The hackers have hidden a message in this image. Find out what it is.
+
+![](C:\Users\jv1c\Documents\PenReferences\WriteUps\NCL\Steg1.jpg)
+
+7:35:26 pm
+
+Cyber Command
+
+What is the hidden flag in the image? (35 pts)
+
+7:35:26 pm
