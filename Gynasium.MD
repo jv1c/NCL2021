@@ -340,7 +340,7 @@ Our analysts have obtained password dumps storing hacker passwords. It seems to 
 | ------------------------------------------------------------ | ------------------ | :----------: |
 | ![img](https://cdn.cyberskyline.com/7149c59db65c6cd9ce44e4a78714feea59e230ba/img/avatars/small/mark.png)Mark25 points | iveghny ynxr       | virtual lake |
 
-It's a ROT13
+* It's a ROT13
 
 # Crypto 3
 
@@ -412,4 +412,18 @@ Cyber Command
 
 What is the hidden flag in the image? (35 pts)
 
-7:35:26 pm
+SKY-TVJI-2063
+
+* used strings to find the hidden data
+
+# Stego 2
+
+
+
+![](C:\Users\jv1c\Documents\PenReferences\WriteUps\NCL\STEG2.bmp)
+
+Cyber Command
+
+What is the hidden flag? (50 pts)
+
+8:12:25 pm
