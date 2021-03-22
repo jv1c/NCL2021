@@ -147,3 +147,51 @@ A hacker managed to create an account on our ftp server and stole a flag. Analyz
 | Q4 - 15 pointsWhat is the password of the account that logged in? | f1leTransf3r |
 | Q5 - 15 pointsWhat folder is the flag stored in?             | cookiejar    |
 | Q6 - 25 pointsWhat is the flag that was downloaded from the FTP server? | flag.jpg     |
+
+
+
+
+
+ Hasher (Easy)(60 points)
+
+Cyber Command
+
+There is a program floating around that validates a password, we need to figure out how it's validating the password.
+
+8:23:53 pm
+
+| Q1 - 10 pointsWhat programming language is this program written in? |      |
+| ------------------------------------------------------------ | ---- |
+| Q2 - 50 pointsWhat input properly validates with the program? |      |
+
+
+
+ Artifact (Hard)(50 points)
+
+Cyber Command
+
+The Metropolis Police Department is looking for the whereabouts of suspect wanted in an investigation, this image is the last image that was posted on the suspect's social media profile, help the police locate the suspect.
+
+10:04:54 pm
+
+Cyber Command
+
+What is the street address of the building this photo was taken in? (50 pts)
+
+10:04:54 pm
+
+
+
+Cyber Command
+
+Analyze the dpkg log to understand what was installed on this server. Use the built-in terminal to access the server, if you have any issues accessing the terminal, please file a support ticket.
+
+NOTE: The terminal session is logged. Please do not perform any denial of service attacks on the Linux server provided, malicious attempts to attack the Cyber Skyline platform will result in disqualification.
+
+5:47:05 pm
+
+| Q1 - 15 pointsWhat version number of mongodb was installed on the machine? cat /var/log/dpkg.log |          |
+| ------------------------------------------------------------ | -------- |
+| Q2 - 15 pointsWhat version of gnupg-utils was installed on the machine? gpg --version |          |
+| Q3 - 20 pointsWhat distribution of Linux is the machine running? cat /etc/issue | Kali GNU |
+| Q4 - 25 pointsWhen was mongodb uninstalled from the machine (round up to the nearest minute)? |          |
